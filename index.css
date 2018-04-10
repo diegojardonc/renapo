@@ -93,6 +93,22 @@ input[class|="get"]{
   padding: 0.5em;
 }
 
+.get-curp__clear,
+.get-info__clear {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 480px){
+  body {
+    padding: 0em 1em;
+  }
+  
+  .content > * {
+    width: 100%;
+  }
+  
+}
+
 @media screen and (min-width: 768px){
   body{
     padding: 1em 2em;
@@ -105,17 +121,40 @@ input[class|="get"]{
   }
 }
 
-@media screen and (max-width: 480px){
-    body{
-        padding-left: 1em;
-        padding-right: 1em; 
-    }
-
-    .get-info, .get-curp, .captcha{
-        width: 100%;
-    }
-
-    .get-curp__clear, .get-info__clear{
-        margin-left: 1em;
-    }
+@media screen and (min-width: 1240px){
+  
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 100%;
+  }
+  
+  .get-info {
+    margin: 0;
+    margin-right: 0.5em;
+    width: calc(50%-0.5em);
+  }
+  
+  .get-curp {
+    margin: 0;
+    margin-left: 0.5em;
+    width: calc(50%-0.5em);
+  }
+  
+  .captcha{
+    width: 35%;
+    margin-top: 2em;
+    display: block;
+  }
+  
+  .content{
+    display: flex;
+    justify-content: center;
+  }
+  
 }
