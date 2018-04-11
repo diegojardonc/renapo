@@ -20,15 +20,23 @@ body{
   padding: 2em 0em;
 }
 
-.logo{
+.logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   text-align: center;
   padding: 2em 0em;
-  width: 10em;
 }
 
-.logo__image{
-  width: 100%;
+.logos__segob {
+  width: 18em;
+}
+
+.logos__renapo {
+  margin-left: 0.5em;
+  width: 9em;
 }
 
 .get-info{
@@ -103,6 +111,14 @@ input[class|="get"]{
     padding: 0em 1em;
   }
   
+  .logos__segob {
+    width: 12em;
+  }
+
+  .logos__renapo {
+    width: 6em;
+  }
+
   .content > * {
     width: 100%;
   }
