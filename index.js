@@ -19,12 +19,10 @@ let months = [
   'Diciembre'
 ];
 
-let day = date.getDay() + 1;
+let day = date.getDate() + 1;
 let month = months[date.getMonth()];
 let year = date.getFullYear();
 let today = day + ' de ' + month + ' del ' + year;
-
-console.log({today})
 
 clearCURP.addEventListener('click', function (e) {
   e.preventDefault();

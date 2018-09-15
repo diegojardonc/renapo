@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-:root{
+:root {
   --main-color: rgb(207, 36, 42);
   --secondary-color: rgb(112, 112, 112);
   --font: 'Open Sans', sans-serif;
@@ -8,19 +6,19 @@
 
 *,
 *::after,
-*::before{
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 16px;
   font-family: var(--font);
   padding: 2em 0em;
 }
 
-.logos{
+.logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,62 +28,60 @@ body{
   padding: 2em 0em;
 }
 
-.logos__segob {
-  width: 18em;
-}
-
-.logos__renapo {
+.logos__renapo  {
   margin-left: 0.5em;
-  width: 9em;
+  width: 25%;
 }
 
-.get-info{
+.get-info {
   margin: 0 auto 2em auto;
   width: 24em;
 }
 
-.get-info__title{
+.get-info__title {
   display: block;
   font-size: 1em;
   background-color: var(--main-color);
   text-align: center;
   color: #fff;
-  padding: 0.125em;
+  padding: 0.75rem 0;
 }
 
-h2[class$="title"]{
+h2[class$="title"] {
   background-color: var(--main-color);
   display: block;
   font-size: 1em;
   color: white;
   text-align: center;
-  padding: 0.125em;
+  padding: 0.25em 0;
+
+  border-radius: 0.25rem;
 }
 
-input[class|="get"]{
+input[class|="get"] {
   display: block;
   margin: 0.5em 0;
   padding: 0.5em;
   width: 100%;
 }
 
-.get-curp{
+.get-curp {
   width: 24em;
   margin: 0 auto 2em auto;
 }
 
-.captcha{
+.captcha {
   margin: auto;
   text-align: center;
   width: 24em;
 }
 
-.captcha__image{
+.captcha__image {
   margin-top: 1em;
 }
 
 .get-info_centered,
-.get-curp_centered{
+.get-curp_centered {
   display: flex;
   justify-content: center;
   margin-top: 1.5em;
@@ -94,42 +90,44 @@ input[class|="get"]{
 .get-info__clear,
 .get-info__submit,
 .get-curp__clear,
-.get-curp__submit{
+.get-curp__submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+
+  border: none;
+  background-color: white;
+  color: var(--main-color);
 }
 
 .get-curp__clear,
-.get-info__clear {
+.get-info__clear  {
   margin-left: 0.5em;
 }
 
-.footer {
+.footer  {
   margin-top: 1em;
 }
 
-.footer__disclaimer {
+.footer__disclaimer  {
   font-size: 0.75em;
 }
 
-.footer__date {
+.footer__date  {
   text-align: right;
   font-size: 0.75em;
 }
 
-@media screen and (max-width: 480px){
-  body {
+@media screen and (max-width: 480px) {
+  body  {
     padding: 1em 1em;
-  }
-  
-  .logos__segob {
-    width: 12em;
   }
 
   .logos__renapo {
-    width: 6em;
+    padding: 0 1.5rem;
+    width: 100%;
   }
 
   .content > * {
@@ -138,50 +136,50 @@ input[class|="get"]{
   
 }
 
-@media screen and (min-width: 768px){
-  body{
+@media screen and (min-width: 768px) {
+  body {
     padding: 1em 2em;
   }
   
-  .content{
+  .content {
     align-content: flex-start;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 1240px){
+@media screen and (min-width: 1240px) {
   
-  body {
+  body  {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2em;
     justify-content: center;
   }
   
-  .header {
+  .header  {
     width: 100%;
   }
   
-  .get-info {
+  .get-info  {
     margin: 0;
     margin-right: 0.5em;
     width: calc(50%-0.5em);
   }
   
-  .get-curp {
+  .get-curp  {
     margin: 0;
     margin-left: 0.5em;
     width: calc(50%-0.5em);
   }
   
-  .captcha{
+  .captcha {
     width: 35%;
     margin-top: 2em;
     display: block;
   }
   
-  .content{
+  .content {
     display: flex;
     justify-content: center;
   }
